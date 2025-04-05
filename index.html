@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bharat Jain</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+            height: 100vh;
+            color: #fff;
+            line-height: 1.6;
+            overflow: hidden;
+        }
+
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 15px;
+            max-width: 960px;
+            height: 100vh;
+            margin: 0 auto;
+            padding: 40px;
+            box-sizing: border-box;
+        }
+
+        .profile-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 8px;
+            height: auto; /* Changed from 50vh for better mobile flow */
+            box-sizing: border-box;
+            justify-content: center;
+            margin-bottom: 15px; /* Added margin for mobile view */
+        }
+
+        .profile-image-container {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 4px solid #555;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .profile-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .name {
+            font-size: 1.8em;
+            font-weight: 600;
+            color: #eee;
+            margin-bottom: 8px;
+            text-align: center;
+        }
+
+        .github {
+            font-size: 0.9em;
+            text-align: center;
+        }
+
+        .github a {
+            color: #bbb;
+            text-decoration: none;
+        }
+
+        .github a:hover {
+            color: #eee;
+        }
+
+        .content-section {
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 8px;
+            height: 100%;
+            box-sizing: border-box;
+            overflow-y: auto;
+        }
+
+        .section-title {
+            font-size: 1.4em;
+            font-weight: 500;
+            color: #eee;
+            border-bottom: 2px solid #555;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        .about-section p {
+            font-size: 0.9em;
+            color: #ccc;
+            margin-bottom: 10px;
+        }
+
+        .hobbies-interests {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .hobbies-interests li {
+            background-color: #333;
+            color: #ddd;
+            padding: 6px 10px;
+            border-radius: 15px;
+            font-size: 0.8em;
+        }
+
+        .accent {
+            color: #f39c12;
+            font-weight: 500;
+        }
+
+        /* Media query for mobile devices (example: screens with a maximum width of 768px) */
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr; /* Change to a single column layout */
+                grid-template-rows: auto auto; /* Allow rows to take their natural height */
+                padding: 20px; /* Adjust padding for smaller screens */
+            }
+
+            .profile-section {
+                height: auto;
+                margin-bottom: 20px; /* Increased margin for better separation */
+                align-items: center; /* Ensure content remains centered */
+            }
+
+            .profile-image-container {
+                width: 120px;
+                height: 120px;
+            }
+
+            .name {
+                font-size: 1.6em;
+                margin-bottom: 5px;
+            }
+
+            .content-section {
+                padding: 15px;
+            }
+
+            .section-title {
+                font-size: 1.2em;
+                margin-bottom: 10px;
+            }
+
+            .about-section p {
+                font-size: 0.85em;
+            }
+
+            .hobbies-interests li {
+                font-size: 0.75em;
+                padding: 5px 8px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="profile-section">
+            <div class="profile-image-container">
+                <img src="bharat.jpg" alt="Bharat Jain" class="profile-image">
+            </div>
+            <h1 class="name"><i>Bharat Jain</i></h1>
+            <div style="text-align: center; margin-bottom: 10px; color: #bbb; font-size: 0.9em;">
+                <span> jainbharat1517@gmail.com</span>
+            </div>
+            <p class="github" style="font-size: 0.9em; text-align: center;">
+                <a href="https://github.com/Bharatjain9" target="_blank" style="color: #bbb; text-decoration: none;">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+            </p>
+        </div>
+        <div class="content-section">
+            <section class="about-section">
+                <h2 class="section-title">About Me</h2>
+                <p>Driven by a <span class="accent">deep curiosity</span> for how things work, I am a <span
+                        class="accent">passionate engineer</span> eager to tackle complex challenges and build innovative
+                    solutions. My mind sparks with ideas, always seeking the next <span class="accent">interesting puzzle</span> to
+                    solve.</p>
+                <p>Whether it's <span class="accent">designing smart tech</span> or solving everyday problems, I enjoy finding
+                    <span class="accent">creative and efficient</span> ways to make life better. I thrive on understanding the
+                    <span class="accent">intricacies of technology</span> and applying that knowledge to create <span
+                        class="accent">meaningful impact</span>.</p>
+            </section>
+
+            <section>
+                <h2 class="section-title">Hobbies and Interests</h2>
+                <ul class="hobbies-interests">
+                    <li><span class="accent">Coding</span> - Sharpening strategic thinking through immersive digital worlds.
+                    </li>
+                    <li><span class="accent">Reading</span> - Unlocking worlds of knowledge, one page at a time.</li>
+                    <li><span class="accent">Gaming</span> - Sharpening strategic thinking and enjoying immersive virtual adventures.</li>
+                    <li><span class="accent">Photography</span> - Seeing the world through a unique and creative lens. </li>
+                    <li><span class="accent">Exploring New Technologies</span> - Always eager to learn the latest advancements.</li>
+                    <li><span class="accent">Problem-Solving</span> - The thrill of finding elegant solutions to complex issues.</li>
+                </ul>
+            </section>
+        </div>
+    </div>
+</body>
+
+</html>
