@@ -55,10 +55,10 @@
             padding: 20px;
             background-color: rgba(0, 0, 0, 0.7);
             border-radius: 8px;
-            height: auto; /* Changed from 50vh for better mobile flow */
+            height: auto;
             box-sizing: border-box;
             justify-content: center;
-            margin-bottom: 15px; /* Added margin for mobile view */
+            margin-bottom: 15px;
         }
 
         .profile-image-container {
@@ -110,19 +110,25 @@
         }
 
         .section-title {
-            font-size: 1.4em;
+            font-size: 1.3em;
             font-weight: 500;
             color: #eee;
             border-bottom: 2px solid #555;
-            padding-bottom: 10px;
-            margin-bottom: 15px;
+            padding-bottom: 8px;
+            margin-bottom: 12px;
             text-align: left;
         }
 
         .about-section p {
+            font-size: 0.85em;
+            color: #ccc;
+            margin-bottom: 8px;
+        }
+
+        .education-section p {
             font-size: 0.9em;
             color: #ccc;
-            margin-bottom: 10px;
+            margin-bottom: 8px;
         }
 
         .hobbies-interests {
@@ -134,11 +140,11 @@
         }
 
         .hobbies-interests li {
+            font-size: 0.78em;
             background-color: #333;
             color: #ddd;
-            padding: 6px 10px;
+            padding: 5px 8px;
             border-radius: 15px;
-            font-size: 0.8em;
         }
 
         .accent {
@@ -146,18 +152,17 @@
             font-weight: 500;
         }
 
-        /* Media query for mobile devices (example: screens with a maximum width of 768px) */
         @media (max-width: 768px) {
             .container {
-                grid-template-columns: 1fr; /* Change to a single column layout */
-                grid-template-rows: auto auto; /* Allow rows to take their natural height */
-                padding: 20px; /* Adjust padding for smaller screens */
+                grid-template-columns: 1fr;
+                grid-template-rows: auto auto;
+                padding: 20px;
             }
 
             .profile-section {
                 height: auto;
-                margin-bottom: 20px; /* Increased margin for better separation */
-                align-items: center; /* Ensure content remains centered */
+                margin-bottom: 20px;
+                align-items: center;
             }
 
             .profile-image-container {
@@ -175,17 +180,25 @@
             }
 
             .section-title {
-                font-size: 1.2em;
-                margin-bottom: 10px;
+                font-size: 1.1em;
+                margin-bottom: 8px;
+                padding-bottom: 6px;
             }
 
             .about-section p {
-                font-size: 0.85em;
+                font-size: 0.8em;
+                margin-bottom: 6px;
+            }
+
+            .education-section p {
+                font-size: 0.8em;
+                margin-bottom: 6px;
             }
 
             .hobbies-interests li {
-                font-size: 0.75em;
-                padding: 5px 8px;
+                font-size: 0.7em;
+                padding: 4px 6px;
+                margin-bottom: 4px;
             }
         }
     </style>
@@ -201,9 +214,19 @@
             <div style="text-align: center; margin-bottom: 10px; color: #bbb; font-size: 0.9em;">
                 <span> jainbharat1517@gmail.com</span>
             </div>
-            <p class="github" style="font-size: 0.9em; text-align: center;">
+            <p class="github" style="font-size: 0.9em; text-align: center; margin-bottom: 5px;">
                 <a href="https://github.com/Bharatjain9" target="_blank" style="color: #bbb; text-decoration: none;">
                     <i class="fab fa-github"></i> GitHub
+                </a>
+            </p>
+            <p class="linkedin" style="font-size: 0.9em; text-align: center; margin-bottom: 5px;">
+                <a href="https://www.linkedin.com/in/bharat-jain-b15476308" target="_blank" style="color: #bbb; text-decoration: none;">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+            </p>
+            <p class="leetcode" style="font-size: 0.9em; text-align: center;">
+                <a href="https://leetcode.com/u/Bharat_Jain9/" target="_blank" style="color: #bbb; text-decoration: none;">
+                    LeetCode
                 </a>
             </p>
         </div>
@@ -215,9 +238,16 @@
                     solutions. My mind sparks with ideas, always seeking the next <span class="accent">interesting puzzle</span> to
                     solve.</p>
                 <p>Whether it's <span class="accent">designing smart tech</span> or solving everyday problems, I enjoy finding
-                    <span class="accent">creative and efficient</span> ways to make life better. I thrive on understanding the
-                    <span class="accent">intricacies of technology</span> and applying that knowledge to create <span
+                    <span class="accent">creative and efficient</span> ways to make life better. <span
                         class="accent">meaningful impact</span>.</p>
+            </section>
+
+            <section class="education-section">
+                <h2 class="section-title">Education</h2>
+                <p><strong>Currently pursuing B.Tech (C.S.E) from JECRC UNIVERSITY , JAIPUR</strong><br>
+                
+                Year of Passing -2027<br></p>
+                
             </section>
 
             <section>
